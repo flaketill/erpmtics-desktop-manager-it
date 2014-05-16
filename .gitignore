@@ -1,6 +1,6 @@
 ##############Tools development
-python-windows-packager/*
-tmp/*
+python-windows-packager
+tmp
 erpmtics.spec
 main.c
 make.py
@@ -8,6 +8,7 @@ notify.py
 python-2.7.3.msi
 tmp.txt
 wine_enviroment.sh
+scritps-linux
 
 #############
 ## Python
