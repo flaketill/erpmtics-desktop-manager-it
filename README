@@ -1,0 +1,9 @@
+erpmtics is a program that try eject commans on remote machines
+under Windows, Linux, Mac OS X.
+
+For example run a .vbs on windows, or a .sh on Linux and Mac OS X
+
+Its main advantages over similar tools are that
+erpmtics works with any version of Python since 2.7, multi-platform,
+and uses the OS support to load the dynamic libraries, thus ensuring full
+compatibility.
