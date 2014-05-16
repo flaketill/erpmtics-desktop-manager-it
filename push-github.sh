@@ -49,14 +49,19 @@ setup_git()
 {
 	git config --global user.email "armandoibarra1@gmail.com"
 	git config --global user.name "Armando Ibarra1"
-	git remote add origin ${URL_GIT_REPO}
+	#git remote add origin ${URL_GIT_REPO}
 
 }
 
 push_git()
 {
+	git add .
+	#git-commit - Record changes to the repository
+	read -p "Please input the msn for commit: ____-->" msn
+	
+	git commit -m ${msn}
 	git push -u origin master
-	git branch --set-upstream-to local-branch-name origin/remote-branch-name
+	#git branch --set-upstream-to $local-branch-name origin/remote-branch-name
 }
 
 install_git()
@@ -68,7 +73,8 @@ main(){
 	echo -e "install git"
 	install_git
 	echo -e "config git"
-	setup_git
+	#setup_git
+	push_git
 }
 
 main
